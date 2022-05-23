@@ -1,0 +1,98 @@
+.body-container {
+    height: 100vh;
+    background-image: linear-gradient(60deg,#910d74, #2a1998);
+}
+.input-wrap {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #910d74;
+    background-color: #fff;
+    .input-text {
+        flex: 1;
+        padding: 8px 14px;
+        input {
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            border: none;
+        }
+    }
+    .input-btn {
+        background-color: #bd1999 ;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 8px 14px;
+        font-size: 18px;
+        transition: all linear 0.25s;
+        .icon {
+            margin-left: 6px;
+            font-size: 18px;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: #910d74;
+        }
+    }
+}
+.todo-list-container {
+    margin: 50px auto;
+    padding: 20px 0;
+    max-width: 600px;
+    border: 1px solid #5a3aca;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 3px 20px ;
+    border-radius: 10px;
+    .todo-list-nav {
+        display: flex;
+        padding: 0 22px 10px 22px;
+        border-bottom: 2px solid #910d74;
+        .todo-list-nav-item {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 20px 0 0;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .todo-list {
+        margin: 0;
+        padding: 0 20px;
+    }
+    .todo-item {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+        .todo-item-text {
+            font-size: 16px;
+            flex: 1;
+            text-align: left;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .icon {
+            margin-left: 10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .todo-check {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+      
+    }
+    .todo-item + .todo-item {
+        border-top: 1px solid #3f1fb4;
+    }
+}
